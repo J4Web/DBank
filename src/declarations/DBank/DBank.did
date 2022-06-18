@@ -1,0 +1,5 @@
+service : {
+  readData: () -> (nat) query;
+  topup: (nat) -> () oneway;
+  withDraw: (nat) -> () oneway;
+}
