@@ -1,11 +1,12 @@
 import Debug "mo:base/Debug";
 actor DBank{
+
    stable var val:Nat=90;
     Debug.print("Hello World");
     Debug.print(debug_show(val));
     Debug.print("testing for orthogonal persistence");
     Debug.print("testing for orthogonal persistence");
-
+Debug.print("testing for orthogonal persistence");Debug.print("testing for orthogonal persistence");Debug.print("testing for orthogonal persistence");Debug.print("testing for orthogonal persistence");Debug.print("testing for orthogonal persistence");Debug.print("testing for orthogonal persistence");
     public func topup(amount: Nat)
     {
         var p="its a fucking wallet Where your wallet has : ";
