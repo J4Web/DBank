@@ -2,7 +2,8 @@ import type { Principal } from '@dfinity/principal';
 import type { ActorMethod } from '@dfinity/agent';
 
 export interface _SERVICE {
-  'readData' : ActorMethod<[], bigint>,
-  'topup' : ActorMethod<[bigint], undefined>,
-  'withDraw' : ActorMethod<[bigint], undefined>,
+  'compound' : ActorMethod<[], undefined>,
+  'readData' : ActorMethod<[], number>,
+  'topup' : ActorMethod<[number], undefined>,
+  'withDraw' : ActorMethod<[number], undefined>,
 }
