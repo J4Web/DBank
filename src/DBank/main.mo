@@ -4,6 +4,7 @@ import Float "mo:base/Float";
 actor DBank{
 
    stable var val:Float=90;
+   val:=100;
    stable var startTime=Time.now();
     Debug.print("Hello World");
     Debug.print(debug_show(val));
@@ -35,10 +36,11 @@ actor DBank{
     };
     public func compound()
     {
-        let currTime=Time.now();
+        var currTime=Time.now();
         let timeElapsedInnn=(currTime-startTime);
         let timeElapsedInSecs=(timeElapsedInnn/1000000000);
-        val:= (val*  (1.01 ** Float.fromInt(timeElapsedInSecs)));
+        let power:Float=1.01 ** Float.fromInt(timeElapsedInSecs);
+        val:=val*power;
         startTime:=currTime;
         Debug.print(debug_show(val));
     };
