@@ -1,6 +1,0 @@
-service : {
-  compound: () -> () oneway;
-  readData: () -> (float64) query;
-  topup: (float64) -> () oneway;
-  withDraw: (float64) -> () oneway;
-}
